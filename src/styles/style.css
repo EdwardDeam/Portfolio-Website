@@ -8,36 +8,45 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', sans-serif;
-  font-weight: 500;
+  font-weight: 500;   /* Medium typeface */
   font-style: normal;
 }
 
 nav {
   height: 40px;
-  background-color: #7b271b;
-  overflow: hidden;
   position: fixed;
+  overflow: hidden;
+  margin-left: 30vw;
   bottom: 0;
-  width: 100%;
+  width: 40vw;
+  background-color: #7b271b;
   text-align: center;
 }
-.nav-link {
+.nav-link, .nav-icon {
+  background-color: inherit;
+  height: inherit;
   display: inline-block;
   text-align: center;
-  background-color: inherit;
   text-decoration: none;
-  width:80px;
-  height: inherit;
-  padding: 10px;
+  padding-top: 10px;
+  width: 7vw;
 }
 
-.nav-link:hover {
+.nav-icon {
+  display: none;
+}
+
+.nav-link:hover, .nav-icon:hover{
   background-color: #D86D1B;
 }
 
 .keyart {
   background-color: #FFAF1B;
   height: 100vh;
+}
+
+.fas {
+  background-color: inherit;
 }
 
 .maincontainer{
@@ -53,3 +62,26 @@ footer p {
 .container {
   height: 100vh;
 } 
+
+/* tablet landscape */
+@media only screen and (max-width: 1050px) {
+  nav {
+    margin-left: 0;
+    width: 100vw;
+  }
+
+  .nav-link {
+    width: 19vw;
+  }
+}
+
+/* Phone */
+@media only screen and (max-width: 500px){
+  .nav-link {
+    display: none;
+  }
+  .nav-icon {
+    display: inline-block;
+    width: 19vw;
+  }
+}
