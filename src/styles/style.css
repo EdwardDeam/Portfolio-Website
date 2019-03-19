@@ -15,6 +15,24 @@ h1, h2, h3, h4, h5, h6 {
 nav {
   height: 40px;
   background-color: #7b271b;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.nav-link {
+  display: inline-block;
+  text-align: center;
+  background-color: inherit;
+  text-decoration: none;
+  width:80px;
+  height: inherit;
+  padding: 10px;
+}
+
+.nav-link:hover {
+  background-color: #D86D1B;
 }
 
 .keyart {
@@ -26,9 +44,11 @@ nav {
   
 }
 
-footer {
+footer p {
   padding-bottom: 20px;
+  margin-bottom: 40px;
   text-align: center;
+  color: #973700;
 }
 .container {
   height: 100vh;
