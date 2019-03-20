@@ -11,8 +11,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;   /* Medium typeface */
   font-style: normal;
 }
-.hexagon {
-  fill: #993A1B;
+.hexagon-web ,.hexagon-mob {
+
   position: relative;
   color: #FFE473;
 }
@@ -22,6 +22,12 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   left: 15px;
   line-height: 60px; 
+}
+.hex-fill {
+  fill: #993A1B;
+}
+.hexagon-mob {
+  display: none;
 }
 
 .hex-web-icon {
@@ -107,5 +113,13 @@ footer p {
   .nav-icon {
     display: inline-block;
     width: 19vw;
+  }
+
+  .hexagon-web {
+    display: none;
+  }
+
+  .hexagon-mob {
+    display: block;
   }
 }
