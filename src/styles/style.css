@@ -11,6 +11,30 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;   /* Medium typeface */
   font-style: normal;
 }
+.hexagon {
+  fill: #993A1B;
+  position: relative;
+  color: #FFE473;
+}
+.hex-mob-icon {
+  font-size: 30px;
+  background-color: transparent;
+  position: absolute;
+  left: 15px;
+  line-height: 60px; 
+}
+
+.hex-web-icon {
+  font-size: 60px;
+  background-color: transparent;
+  position: absolute;
+  left: 30px;
+  line-height: 120px; 
+}
+
+.hexagon:hover {
+  fill:  #D86D1B;
+}
 
 nav {
   height: 40px;
