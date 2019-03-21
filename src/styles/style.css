@@ -18,8 +18,14 @@ h2 {
   font-size: 62px;
   margin-left: 30px;
 }
+h3 {
+  font-size: 28px;
+}
 p {
   font-size: 20px;
+}
+a {
+  background-color: inherit;
 }
 .error {
   display: none;
@@ -107,6 +113,115 @@ p {
   fill:  #D86D1B;
 }
 
+/* PROJECT PAGES */
+.project-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100vh;
+}
+.project-container h1 {
+  margin-left: 10vw;
+  margin-right: auto;
+}
+.card-container {
+  display: flex;
+  align-items: center;
+  margin-left: 25%;
+  flex-direction: row;
+}
+.card-spacer {
+  width: 5vw;
+}
+/* DISPLAY CARD */
+.card{
+  height: 60vh;
+  width: 20vw;
+  background-color: #3E0D0C;
+}
+.card-img {
+  width: 88%;
+  height: 45%;
+  background-color: plum;
+  margin: auto;
+  margin-top: 3vh;
+  }
+.card-text {
+  background-color: inherit;
+  width: 88%;
+}
+.card-text p, .card-text h3 {
+  /* background-color: rgba(92, 25, 21, 0.5); */
+  background-color: inherit;
+  margin: 5%
+}
+.card-buttons {
+  background-color: inherit;
+}
+.card-btn{
+  display: inline-block;
+  background-color: #993A1B;
+  border-radius: 100%;
+  height: 64px;
+  width: 64px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.card-btn i {
+  font-size: 48px;
+  background-color: transparent;
+  margin-left: 11px;
+  margin-top: 8px;
+}
+.card-btn:hover {
+  background-color: #D86D1B;
+}
+
+/* CONTACT ME  */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  height:88vh;
+  padding-top: 10vh;
+}
+.contact-container h1 {
+  text-align: center;
+}
+input, label, textarea {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+.form-box {
+  align-self: center;
+  width:90vw;
+}
+.form-element {
+  margin-bottom: 8px;
+  margin-left: 28%;
+}
+.form-text {
+  background-color: #3E0D0C;
+  border: none;
+  width: 40vw;
+  resize: none;
+  font-style: normal;
+  padding: 5px;
+}
+.submit-btn {
+  cursor: pointer;
+  border: none;
+  background-color: #993A1B;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  font-style: normal;
+  width: 120px;
+  height:40px;
+  margin-top: 20px;
+}
+
 /* NAVIGATION BAR */
 nav {
   height: 40px;
@@ -130,7 +245,7 @@ nav {
 .nav-icon {
   display: none;
 }
-.nav-link:hover, .nav-icon:hover{
+.nav-link:hover, .nav-icon:hover {
   background-color: #D86D1B;
 }
 .fas {
@@ -142,9 +257,6 @@ nav {
   height: 100vh;
 }
 
-.maincontainer{
-  
-}
 
 footer p {
   padding-bottom: 20px;
@@ -165,8 +277,11 @@ footer p {
   .nav-link {
     width: 19vw;
   }
-  .about-container, .skill-container {
+  .about-container{
     align-items: start;
+  }
+  .skill-container {
+    justify-content: center;
   }
   .about-content{
     width: 95vw;
@@ -175,6 +290,42 @@ footer p {
   .skill-container h1 {
     margin-right: 2vw;
   }
+  .card-container {
+    margin-left: 18%;
+  }
+  /* DISPLAY CARD */
+.card{
+  width: 30vw;
+}
+.card-text {
+  font-size: 90%;
+}
+.card-btn{
+  height: 48px;
+  width: 48px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  }
+  .card-btn i {
+    font-size: 32px;
+    margin-left: 10px;
+  }
+  /* ABOUT */
+  input, label, textarea {
+    font-size: 20px;
+    }
+  .form-text {
+    width: 50vw;
+    padding: 3px;
+  }
+  .form-element{
+    margin-left: 21%;
+  }
+  /* .submit-btn {
+    font-size: 18px;
+    width: 80px;
+    height:30px;
+    } */
 }
 
 /* Phone */
@@ -195,7 +346,11 @@ footer p {
   h1 {
     font-size: 48px;
   }
-
+  h2 {
+    font-size: 31px;
+    text-align: center;
+    margin-left: 0;
+  }
   p {
     font-size: 11px;
   }
@@ -208,27 +363,85 @@ footer p {
     left:0;
   }
   .skill-container {
-    height:95vh;
-    display: flex;
-    align-items:center;
-    justify-content: center;
     flex-direction: column;
   }
   .skill-grid {
-    display: grid;
-    width: 80vw;
-    height:70vh;
     grid-template-rows: 65px auto 65px;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-flow: row;
   }
   .grid-text {
     grid-row: 2/3;
-    grid-column: 1/4;
+    grid-column: 1/5;
   }
   .placeholder { /*Used to correct grid spacing until course is finished*/
     width: 65px;
     height: 65px;
+  }
+
+  .project-container {
+    height: auto;
+  }
+  .card-container {
+    margin-left: 5%;
+    flex-direction: column;
+  }
+  .card-spacer {
+    height: 5vw;
+  }
+  .card{
+    height: 70vh;
+    width: 90vw;
+    background-color: #3E0D0C;
+  }
+  .card-img {
+    width: 88%;
+    height: 45%;
+    background-color: plum;
+    margin: auto;
+    margin-top: 3vh;
+    }
+  .card-text {
+    background-color: inherit;
+    width: 88%;
+  }
+  .card-text p, .card-text h3 {
+    background-color: inherit;
+    margin: 5%
+  }
+  .card-buttons {
+    background-color: inherit;
+  }
+  .card-btn{
+    display: inline-block;
+    background-color: #993A1B;
+    border-radius: 100%;
+    height: 48px;
+    width: 48px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .card-btn i {
+    font-size: 32px;
+    background-color: transparent;
+    margin-left: 10px;
+    margin-top: 8px;
+  }
+  /* CONTACT ME  */
+  input, label, textarea {
+  font-size: 14px;
+  }
+.form-text {
+  width: 90vw;
+  padding: 3px;
+}
+.form-element{
+  margin-left:0;
+}
+.submit-btn {
+  font-size: 18px;
+  width: 80px;
+  height:30px;
   }
 }
 

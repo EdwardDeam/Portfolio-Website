@@ -84,12 +84,52 @@
         </div>
       </div>
 
-    <div class="project container">
-      <h1 id="Projects">Projects</h1>
+    <div class="project-container" id="Projects">
+      <h1>Projects</h1>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-img"></div>
+          <div class="card-text">
+            <h3>Project Tile</h3>
+            <p>A description of the project. Some more words about the technology used and the reason for its creation.</p>
+          </div>
+          <div class="card-buttons">
+              <a href="https://github.com"><div class="card-btn"><i class="fab fa-github-square"></i></div></a>
+          </div>
+        </div>
+        <div class="card-spacer"></div>
+        <div class="card">
+            <div class="card-img"></div>
+            <div class="card-text">
+              <h3>Project Tile</h3>
+              <p>A description of the project. Some more words about the technology used and the reason for its creation.</p>
+            </div>
+            <div class="card-buttons">
+                <a href="https://github.com"><div class="card-btn"><i class="fab fa-github-square"></i></div></a>
+            </div>
+          </div>
+      </div>
     </div>
     
-    <div class="contact container">
+    <div class="contact-container">
       <h1 id="Contact">Contact Me</h1>
+      <form class="form-box">
+        <div class="form-element">
+          <label for="inputName">Name</label>
+          <input type="text" class="form-text" id="inputName" placeholder="Name">
+        </div>
+        <div class="form-element">
+          <label for="inputEmail">Email Address</label>
+          <input type="email" class="form-text" id="inputText" placeholder="Email">
+        </div>
+        <div class="form-element">
+          <label for="inputMessage">Message</label>
+          <textarea rows="6" class="form-text" id="inputMessage" placeholder="Enter Your Message"></textarea>
+        </div>
+        <div class="form-element">
+          <input class="submit-btn" type="submit" value="SUBMIT">
+        </div>
+      </form>
     </div>
 
   </div>
@@ -104,7 +144,7 @@
 <nav>
   <a href="#Home" class="nav-link">Home</a>
   <a href="#About" class="nav-link">About</a>
-  <a href="#Skills" class="nav-link">Skills</a>
+  <a href="#Skills" class="nav-link">Skills</a> 
   <a href="#Projects" class="nav-link">Projects</a>
   <a href="#Contact" class="nav-link">Contact</a>
   <!-- Icon menu -->
