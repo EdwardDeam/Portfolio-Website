@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="text-change.js"></script>
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Arvo|Oswald" rel="stylesheet">
@@ -33,39 +34,39 @@
       <h1>Skills</h1>
         <div class="skill-grid">
           
-          <div class="hexagon-mob">
+          <div class="hexagon-mob" onclick="displayRuby()">
             <svg version="1.1" width="100%" height="60">
               <polygon class="hex-fill" points="60,30 45,56 15,56 0,30 15,4 45,4"></polygon>
               <i class="hex-mob-icon devicon-ruby-plain"></i>
             </svg>
           </div>
-          <div class="hexagon-web">
+          <div class="hexagon-web" onclick="displayRuby()">
             <svg version="1.1" width="100%" height="120">
               <polygon class="hex-fill" points="120,60 90,112 30,112 0,60 30,8 90,8"></polygon>
               <i class="hex-web-icon devicon-ruby-plain"></i>
             </svg>
           </div>
         
-          <div class="hexagon-mob">
+          <div class="hexagon-mob" onclick="displayHTML()">
             <svg version="1.1" width="100%" height="60">
               <polygon class="hex-fill" points="60,30 45,56 15,56 0,30 15,4 45,4"></polygon>
               <i class="hex-mob-icon devicon-html5-plain"></i>
             </svg>
           </div>
-          <div class="hexagon-web">
+          <div class="hexagon-web" onclick="displayHTML()">
             <svg version="1.1" width="100%" height="120">
               <polygon class="hex-fill" points="120,60 90,112 30,112 0,60 30,8 90,8"></polygon>
               <i class="hex-web-icon devicon-html5-plain"></i>
             </svg>
           </div>
 
-          <div class="hexagon-mob">
+          <div class="hexagon-mob" onclick="displayCSS()">
             <svg version="1.1" width="100%" height="60">
               <polygon class="hex-fill" points="60,30 45,56 15,56 0,30 15,4 45,4"></polygon>
               <i class="hex-mob-icon devicon-css3-plain"></i>
             </svg>
           </div>
-          <div class="hexagon-web">
+          <div class="hexagon-web" onclick="displayCSS()">
             <svg version="1.1" width="100%" height="120">
               <polygon class="hex-fill" points="120,60 90,112 30,112 0,60 30,8 90,8"></polygon>
               <i class="hex-web-icon devicon-css3-plain"></i>
@@ -74,8 +75,8 @@
 
           <div class="placeholder"></div>
           <div class="grid-text">
-            <h2>HTML</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minus expedita facere illum amet illo laboriosam mollitia architecto quasi molestias libero voluptate veniam quos ipsum accusamus voluptatum nobis, eos eaque!</p>
+            <h2 id="skill-title">HTML</h2>
+            <p id="skill-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minus expedita facere illum amet illo laboriosam mollitia architecto quasi molestias libero voluptate veniam quos ipsum accusamus voluptatum nobis, eos eaque!</p>
           </div>
           <div class="placeholder"></div>
           <div class="placeholder"></div>
