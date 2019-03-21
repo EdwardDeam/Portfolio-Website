@@ -14,6 +14,10 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 96px;
 }
+h2 {
+  font-size: 62px;
+  margin-left: 30px;
+}
 p {
   font-size: 20px;
 }
@@ -43,12 +47,41 @@ p {
   right:0;
   bottom:0;
 }
-
+/* SKILLS SECTION */
+.skill-container {
+  height:95vh;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+}
+.skill-container h1 {
+  margin-left: auto;
+  margin-right: 20vw;
+}
+.skill-grid {
+  display: grid;
+  width: 80vw;
+  height:70vh;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 130px calc(80vw - 260px) 130px;
+  grid-auto-flow: column;
+}
+.grid-text {
+  grid-row: 1/4;
+  grid-column: 2/3;
+}
+.placeholder { /*Used to correct grid spacing until course is finished*/
+  width: 120px;
+  height: 120px;
+}
 /* HEXGAGON ICONS */
 .hexagon-web ,.hexagon-mob {
-
   position: relative;
   color: #FFE473;
+  display: flex;
+  align-items: center;
+  fill: #993A1B;
 }
 .hex-mob-icon {
   font-size: 30px;
@@ -58,12 +91,11 @@ p {
   line-height: 60px; 
 }
 .hex-fill {
-  fill: #993A1B;
+  fill: inherit;
 }
 .hexagon-mob {
   display: none;
 }
-
 .hex-web-icon {
   font-size: 60px;
   background-color: transparent;
@@ -71,8 +103,7 @@ p {
   left: 30px;
   line-height: 120px; 
 }
-
-.hexagon:hover {
+.hexagon-web:hover ,.hexagon-mob:hover {
   fill:  #D86D1B;
 }
 
@@ -134,19 +165,15 @@ footer p {
   .nav-link {
     width: 19vw;
   }
-  .about-container{
+  .about-container, .skill-container {
     align-items: start;
   }
   .about-content{
     width: 95vw;
     height: 95vw;
   }
-  .about-img {
-    /* width: 60%; */
-    /* height:80%; */
-    /* background-color: plum; */
-    /* position: relative; */
-    /* position: initial; */
+  .skill-container h1 {
+    margin-right: 2vw;
   }
 }
 
@@ -155,20 +182,16 @@ footer p {
   .nav-link {
     display: none;
   }
-
   .nav-icon {
     display: inline-block;
     width: 19vw;
   }
-
   .hexagon-web {
     display: none;
   }
-
   .hexagon-mob {
     display: block;
   }
-
   h1 {
     font-size: 48px;
   }
@@ -184,25 +207,49 @@ footer p {
   .about-img {
     left:0;
   }
+  .skill-container {
+    height:95vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .skill-grid {
+    display: grid;
+    width: 80vw;
+    height:70vh;
+    grid-template-rows: 65px auto 65px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: row;
+  }
+  .grid-text {
+    grid-row: 2/3;
+    grid-column: 1/4;
+  }
+  .placeholder { /*Used to correct grid spacing until course is finished*/
+    width: 65px;
+    height: 65px;
+  }
 }
-/* PHONE SMALL SCREEN LANDSCAPE */
-@media screen and (orientation:landscape) {
+
+/* PHONE SMALL SCREEN LANDSCAPE ERROR MSG*/
+@media screen and (max-height:550px) {
   .maincontainer {
     display: none;
   }
   .keyart {
     display: none;
   }
-  .error {
-    display: block;
-    height: 100vh;
-    line-height: 100vh;
-    text-align: center;
-  }
   footer {
     display: none;
   }
   nav {
     display: none;
+  }
+  .error {
+  display: block;
+  height: 100vh;
+  line-height: 100vh;
+  text-align: center;
   }
 }
