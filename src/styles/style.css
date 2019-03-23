@@ -3,7 +3,8 @@
   font-family: 'Arvo', serif;
   font-style: italic;
   color: #ffaf1b;
-  background-color: #210002;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,6 +30,75 @@ a {
 }
 .error {
   display: none;
+}
+.sitecontainer {
+  perspective: 100px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  top: 0;
+  right: 0;
+  bottom:0;
+  left:0;
+}
+.tablet-heading{
+  display: none;
+}
+.keyart {
+  background-color: #FFAF1B;
+  height: 100vh;
+}
+.keyart_layer {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: bottom center;
+  background-size: auto 1080px;
+}
+.maincontainer {
+  background-color: #210002;
+  display: block;
+  position: absolute;
+  top:100%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  overflow-y: initial;
+}
+.layer0 {
+  background-image: url(/media/key-layer0.png);
+  transform: translateZ(-350px) scale(4.55);
+}
+.layer1 {
+  background-image: url(/media/keyart/key-layer1.png);
+  transform: translateZ(-300px) scale(4.05);
+}
+.layer2 {
+  transform: translateZ(-250px) scale(3.55);
+  background-image: url(/media/keyart/key-layer2.png);
+}
+.layer3 {
+  transform: translateZ(-200px) scale(3.05);
+  background-image: url(/media/keyart/key-layer3.png);
+}
+.layer4 {
+  transform: translateZ(-150px) scale(2.55);
+  background-image: url(/media/keyart/key-layer4.png);
+}
+.layer5 {
+  transform: translateZ(-100px) scale(2.05);
+  background-image: url(/media/keyart/key-layer5.png);
+}
+.layer6 {
+  transform: translateZ(-50px) scale(1.55);
+  background-image: url(/media/keyart/key-layer6.png);
+}
+.layer7 {
+  transform: translateZ(0px) scale(1);
+  background-image: url(/media/keyart/key-layer7.png);
 }
 /* ABOUT SECTION */
 .about-container {
@@ -252,13 +322,7 @@ nav {
   background-color: inherit;
 }
 
-.keyart {
-  background-color: #FFAF1B;
-  height: 100vh;
-}
-
-
-footer p {
+.footer p {
   padding-bottom: 20px;
   margin-bottom: 40px;
   text-align: center;
@@ -270,6 +334,27 @@ footer p {
 
 /* tablet */
 @media only screen and (max-width: 1100px) {
+  .keyart {
+    background-size: auto 700px;
+  }
+  .tablet-heading {
+    margin-top:50px;
+    display: block;
+    position: relative;
+    color: #993A1B;
+  }
+  .tablet-heading p{
+    color: #993A1B;
+    text-align: center;
+    font-size: 24px
+  }
+  .tablet-heading h1{
+    color: #993A1B;
+    text-align: center;
+  }
+  .about-img{
+    display: none;
+  }
   nav {
     margin-left: 0;
     width: 100vw;
@@ -330,6 +415,15 @@ footer p {
 
 /* Phone */
 @media only screen and (max-width: 550px) {
+  .tablet-heading p{
+    color: #ffaf1b;
+    text-align: center;
+    font-size: 24px
+  }
+  .tablet-heading h1{
+    color: #ffaf1b;
+    text-align: center;
+  }
   .nav-link {
     display: none;
   }
