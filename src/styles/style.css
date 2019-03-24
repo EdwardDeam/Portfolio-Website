@@ -68,8 +68,11 @@ a {
   z-index: 2;
   overflow-y: initial;
 }
+.noparallax {
+  display: none;
+}
 .layer0 {
-  background-image: url(/media/key-layer0.png);
+  background-image: url(/media/keyart/key-layer0.png);
   transform: translateZ(-350px) scale(4.55);
 }
 .layer1 {
@@ -116,9 +119,6 @@ a {
   width: 60%;
 }
 .about-img {
-  width: 60%;
-  height:80%;
-  background-color: plum;
   position: absolute;
   right:0;
   bottom:0;
@@ -337,24 +337,6 @@ nav {
   .keyart {
     background-size: auto 700px;
   }
-  .tablet-heading {
-    margin-top:50px;
-    display: block;
-    position: relative;
-    color: #993A1B;
-  }
-  .tablet-heading p{
-    color: #993A1B;
-    text-align: center;
-    font-size: 24px
-  }
-  .tablet-heading h1{
-    color: #993A1B;
-    text-align: center;
-  }
-  .about-img{
-    display: none;
-  }
   nav {
     margin-left: 0;
     width: 100vw;
@@ -406,23 +388,26 @@ nav {
   .form-element{
     margin-left: 21%;
   }
-  /* .submit-btn {
-    font-size: 18px;
-    width: 80px;
-    height:30px;
-    } */
 }
 
 /* Phone */
 @media only screen and (max-width: 550px) {
-  .tablet-heading p{
-    color: #ffaf1b;
-    text-align: center;
-    font-size: 24px
+  .keyart_layer {
+   display: none;
   }
-  .tablet-heading h1{
-    color: #ffaf1b;
-    text-align: center;
+  img{
+    display: block;
+  }
+  .noparallax {
+    height: 100vh;
+    background-size: auto;
+    display: block;
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
   .nav-link {
     display: none;
@@ -554,9 +539,36 @@ nav {
     display: none;
   }
   .error {
+  background-color: #210002;
   display: block;
   height: 100vh;
   line-height: 100vh;
   text-align: center;
   }
+}
+/* TABLET LANDSCAPE */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .maincontainer {
+      display: none;
+    }
+    .keyart {
+      display: none;
+    }
+    footer {
+      display: none;
+    }
+    nav {
+      display: none;
+    }
+    .error {
+    background-color: #210002;
+    display: block;
+    height: 100vh;
+    line-height: 100vh;
+    text-align: center;
+    }
 }
