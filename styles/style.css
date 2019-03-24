@@ -57,6 +57,7 @@ a {
   left: 0;
   background-position: bottom center;
   background-size: auto 1080px;
+  background-repeat: no-repeat;
 }
 .maincontainer {
   background-color: #210002;
@@ -479,7 +480,7 @@ nav {
     margin-left: 0;
   }
   p {
-    font-size: 11px;
+    font-size: 14px;
   }
   .skill-container {
     flex-direction: column;
