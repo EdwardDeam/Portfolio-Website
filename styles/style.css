@@ -106,7 +106,8 @@ a {
 }
 /* ABOUT SECTION */
 .about-container {
-  height: 100vh;  
+  /* height: 100vh;   */
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,6 +149,11 @@ a {
 .grid-text {
   grid-row: 1/4;
   grid-column: 2/3;
+  text-align: center;
+}
+.grid-text li{
+  padding: 3px;
+  font-size: 110%;
 }
 .placeholder { /*Used to correct grid spacing until course is finished*/
   width: 120px;
@@ -360,6 +366,7 @@ nav {
     height: auto;
     padding-top: 5px;
     width: 80%;
+    font-size: 95%;
   }
   .about-content {
     display: flex;
@@ -493,6 +500,7 @@ nav {
   .grid-text {
     grid-row: 2/3;
     grid-column: 1/5;
+    text-align: left;
   }
   .placeholder { /*Used to correct grid spacing until course is finished*/
     width: 65px;
