@@ -120,6 +120,7 @@ a {
 }
 .about-img {
   position: absolute;
+  padding: 0 50px 50px 0;
   right:0;
   bottom:0;
 }
@@ -213,9 +214,9 @@ a {
 .card-img {
   width: 88%;
   height: 45%;
-  background-color: plum;
   margin: auto;
   margin-top: 3vh;
+  overflow: hidden;
   }
 .card-text {
   background-color: inherit;
@@ -237,6 +238,10 @@ a {
   width: 64px;
   margin-top: 10px;
   margin-left: 20px;
+}
+.card-img img {
+  object-fit: contain;
+  top: 0;
 }
 .card-btn i {
   font-size: 48px;
@@ -347,6 +352,27 @@ nav {
   .about-container{
     align-items: start;
   }
+  .about-content h1{
+    padding-bottom: 5px;
+  }
+  .about-content p{
+    height: auto;
+    padding-top: 5px;
+    width: 80%;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-img {
+    order: 2;
+    align-self: flex-end;
+    position: initial;
+    display: block;
+    padding: 0;
+    right: 0;
+    bottom: 0;
+  }
   .skill-container {
     justify-content: center;
   }
@@ -409,6 +435,28 @@ nav {
     bottom: 0;
     left: 0;
   }
+  .about-content h1{
+    padding-bottom: 5px;
+  }
+  .about-content p{
+    height: auto;
+    padding-top: 5px;
+    width: 80%;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .about-img {
+    order: 2;
+    align-self: flex-end;
+    position: initial;
+    display: block;
+    padding: 0;
+    right: 0;
+    bottom: 0;
+  }
   .nav-link {
     display: none;
   }
@@ -432,14 +480,6 @@ nav {
   }
   p {
     font-size: 11px;
-  }
-
-  .about-content p{
-    width: 80%;
-  }
-
-  .about-img {
-    left:0;
   }
   .skill-container {
     flex-direction: column;
@@ -476,10 +516,10 @@ nav {
   .card-img {
     width: 88%;
     height: 45%;
-    background-color: plum;
     margin: auto;
     margin-top: 3vh;
     }
+    
   .card-text {
     background-color: inherit;
     width: 88%;
