@@ -35,5 +35,5 @@ Describe key vents in the develometn of the internet from the 1980s t today?
 
 Define and describbe the internet suc as domains, webservers, DNS and webbrowsers
 
-Refelct on one aspect of the development of internet technollogies and how it hasdd contireibuted to the world today/
+Refelct on one aspect of the development of internet technollogies and how it hasdd contireibuted to the world today?
 
